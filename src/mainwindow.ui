@@ -3,7 +3,7 @@
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
   <property name="windowModality">
-   <enum>Qt::NonModal</enum>
+   <enum>Qt::WindowModality::NonModal</enum>
   </property>
   <property name="geometry">
    <rect>
@@ -45,16 +45,16 @@
        <bool>false</bool>
       </property>
       <property name="tabPosition">
-       <enum>QTabWidget::South</enum>
+       <enum>QTabWidget::TabPosition::South</enum>
       </property>
       <property name="tabShape">
-       <enum>QTabWidget::Rounded</enum>
+       <enum>QTabWidget::TabShape::Rounded</enum>
       </property>
       <property name="currentIndex">
        <number>-1</number>
       </property>
       <property name="elideMode">
-       <enum>Qt::ElideNone</enum>
+       <enum>Qt::TextElideMode::ElideNone</enum>
       </property>
       <property name="tabsClosable">
        <bool>false</bool>
@@ -93,7 +93,7 @@
     </property>
     <widget class="QMenu" name="menu_New">
      <property name="title">
-      <string>&amp;New</string>
+      <string>&amp;新窗口</string>
      </property>
      <addaction name="action_Trace_View"/>
      <addaction name="actionLog_View"/>
@@ -160,7 +160,7 @@
   </action>
   <action name="actionSetup">
    <property name="text">
-    <string>&amp;Setup...</string>
+    <string>&amp;测量设定</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Alt+S</string>
@@ -168,7 +168,7 @@
   </action>
   <action name="actionStart_Measurement">
    <property name="text">
-    <string>Star&amp;t Measurement</string>
+    <string>&amp;启动测量</string>
    </property>
    <property name="shortcut">
     <string>F5</string>
@@ -176,7 +176,7 @@
   </action>
   <action name="actionStop_Measurement">
    <property name="text">
-    <string>Sto&amp;p Measurement</string>
+    <string>&amp;结束测量</string>
    </property>
    <property name="shortcut">
     <string>Shift+F5</string>
@@ -189,7 +189,7 @@
   </action>
   <action name="actionSave_Trace_to_file">
    <property name="text">
-    <string>&amp;Save Trace to file...</string>
+    <string>&amp;保存数据到</string>
    </property>
   </action>
   <action name="actionGraph_View">
@@ -208,7 +208,7 @@
   </action>
   <action name="action_WorkspaceNew">
    <property name="text">
-    <string>&amp;New Workspace...</string>
+    <string>&amp;新工作区</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+N</string>
@@ -216,7 +216,7 @@
   </action>
   <action name="action_WorkspaceSave">
    <property name="text">
-    <string>&amp;Save Workspace</string>
+    <string>&amp;保存工作区</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+S</string>
@@ -224,7 +224,7 @@
   </action>
   <action name="action_WorkspaceSaveAs">
    <property name="text">
-    <string>Save Workspace &amp;As...</string>
+    <string>&amp;工作区另存为</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+S</string>
@@ -232,7 +232,7 @@
   </action>
   <action name="action_WorkspaceOpen">
    <property name="text">
-    <string>&amp;Open Workspace...</string>
+    <string>&amp;打开工作区</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+O</string>
@@ -240,7 +240,7 @@
   </action>
   <action name="action_TraceClear">
    <property name="text">
-    <string>&amp;Clear</string>
+    <string>&amp;清除</string>
    </property>
    <property name="shortcut">
     <string>Esc</string>
