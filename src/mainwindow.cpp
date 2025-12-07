@@ -60,6 +60,12 @@ MainWindow::MainWindow(QWidget *parent) :
     QIcon icon(":/assets/cangaroo.png");
     setWindowIcon(icon);
 
+    ui->menuFile->setTitle("文件");
+    ui->menuMeasurement->setTitle("测量");
+    ui->menu_Trace->setTitle("追踪");
+    ui->menuWindow->setTitle("窗口");
+    ui->menuHelp->setTitle("帮助");
+
     connect(ui->action_Trace_View, SIGNAL(triggered()), this, SLOT(createTraceWindow()));
     connect(ui->actionLog_View, SIGNAL(triggered()), this, SLOT(addLogWidget()));
     connect(ui->actionGraph_View, SIGNAL(triggered()), this, SLOT(createGraphWindow()));
